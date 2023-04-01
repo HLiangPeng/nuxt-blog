@@ -12,6 +12,7 @@
         alt="avatar"
       />
     </nav>
+    <slot />
   </div>
 </template>
 
