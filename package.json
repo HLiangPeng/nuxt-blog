@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "commit": "git add .& git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog-zh"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog-zh": "^0.0.2",
+    "nuxt": "^3.3.2"
+  }
+}
