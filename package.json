@@ -15,6 +15,7 @@
     }
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.6.5",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog-zh": "^0.0.2",
     "nuxt": "^3.3.2"

@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# 基于Nuxt 3的博客
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
