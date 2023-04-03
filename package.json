@@ -27,5 +27,8 @@
     "eslint": "^8.37.0",
     "eslint-plugin-vue": "^9.10.0",
     "nuxt": "^3.3.2"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
   }
 }
