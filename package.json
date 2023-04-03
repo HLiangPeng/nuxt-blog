@@ -16,9 +16,16 @@
   },
   "devDependencies": {
     "@huntersofbook/naive-ui-nuxt": "^0.7.1",
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/tailwindcss": "^6.6.5",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog-zh": "^0.0.2",
+    "eslint": "^8.37.0",
+    "eslint-plugin-vue": "^9.10.0",
     "nuxt": "^3.3.2"
   }
 }

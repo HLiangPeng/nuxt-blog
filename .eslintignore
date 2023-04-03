@@ -1,0 +1,15 @@
+*.json
+*.html
+*.svg
+*.woff
+*.ttf
+*.css
+
+.nuxt
+.husky
+
+.eslintrc.js
+.prettierrc.js
+package.json
+node_modules
+.idea
