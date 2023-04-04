@@ -10,10 +10,21 @@ const list: ListType[] = await $fetch('/api/post')
 //   data.date = (data.date as Date).getTime() + ''
 //   return data
 // })
+
+// setTimeout(() => {
+//   showError('文件不存在')
+// }, 3000)
+
+const a = 1
 </script>
 
 <template>
   <div>
+    <NuxtErrorBoundary>
+      <template #error="{ error }">
+        <p>An error occurred: {{ error }}</p>
+      </template>
+    </NuxtErrorBoundary>
     <n-card
       v-for="(data, index) in list"
       :key="index"
