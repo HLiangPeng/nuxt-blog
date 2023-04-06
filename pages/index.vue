@@ -15,7 +15,16 @@ const list: ListType[] = await $fetch('/api/post')
 //   showError('文件不存在')
 // }, 3000)
 
-const a = 1
+definePageMeta({
+  middleware(to, from) {
+    console.log('匿名中间件，具体页面执行', to, from)
+  }
+})
+
+function handleToDetail () {
+  navigateTo('/detail')
+}
+
 </script>
 
 <template>
@@ -28,8 +37,9 @@ const a = 1
     <n-card
       v-for="(data, index) in list"
       :key="index"
-      :title="data.date"
       hoverable
+      class="mb-2 cursor-pointer"
+      @click="handleToDetail"
     >
       {{ data.title }}
     </n-card>
