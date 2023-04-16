@@ -11,6 +11,9 @@ export default defineNuxtConfig({
       // 'composables/**'
     ]
   },
+  alias: {
+    public: '/public'
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     "@huntersofbook/naive-ui-nuxt"
