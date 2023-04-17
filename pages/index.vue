@@ -34,14 +34,15 @@ function handleToDetail () {
         <p>An error occurred: {{ error }}</p>
       </template>
     </NuxtErrorBoundary>
-    <div
+    <!-- <div
       v-for="(data, index) in list"
       :key="index"
       class="mb-2 cursor-pointer"
       @click="handleToDetail"
     >
       {{ data.title }}
-    </div>
+    </div> -->
+    <EntryList :list="list" />
   </div>
 </template>
 

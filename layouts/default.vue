@@ -5,7 +5,7 @@
     <div class="left w-[220px] bg-primary min-h-screen">
       <LeftAside />
     </div>
-    <div class="flex-1">
+    <div class="flex-1 mx-[20px]">
       <slot />
     </div>
     <div class="right w-[240px] bg-primary min-h-screen">
