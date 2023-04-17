@@ -34,15 +34,14 @@ function handleToDetail () {
         <p>An error occurred: {{ error }}</p>
       </template>
     </NuxtErrorBoundary>
-    <n-card
+    <div
       v-for="(data, index) in list"
       :key="index"
-      hoverable
       class="mb-2 cursor-pointer"
       @click="handleToDetail"
     >
       {{ data.title }}
-    </n-card>
+    </div>
   </div>
 </template>
 

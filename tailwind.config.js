@@ -3,7 +3,8 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       primary: '#212121',
-      bg: '#111111'
+      bg: '#111111',
+      hover: '#181818'
     }),
     textColor: {
       primary: '#777777'
