@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex bg-bg text-primary px-20">
+  <div class="flex bg-bg text-primary px-32">
     <div class="left w-[220px] bg-primary min-h-screen">
       <LeftAside />
     </div>

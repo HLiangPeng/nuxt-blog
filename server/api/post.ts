@@ -16,7 +16,6 @@ export default defineEventHandler(() => {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterInfo = matter(fileContents)
     const fileInfo = fs.statSync(fullPath)
-
     return {
       id,
       title: matterInfo.data.title,
