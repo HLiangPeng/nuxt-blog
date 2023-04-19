@@ -57,3 +57,24 @@ const img = '***'
 但是这里就出现了一个问题，界面数据并没有渲染到页面中，并且也无法打印数据。
 
 解决方案：发现在setup、onMounted都调用下接口，界面正常渲染
+
+## 如何使用element-plus icon
+
+官方文档提供的写法：
+
+```html
+<el-icon :size="20">
+  <Edit />
+</el-icon>
+```
+它会提示[Vue warn]: Failed to resolve component: Edit，这个Edit组件不存在。
+
+解决方案：在每个icon组件名前加ElIcon即可
+
+```html
+<el-icon :size="20">
+  <ElIconEdit />
+</el-icon>
+```
+
+方案二：unplugin-icons
