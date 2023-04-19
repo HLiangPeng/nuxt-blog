@@ -16,7 +16,9 @@ const handleError = () => clearError({ redirect: '/' })
     <h1 class="text-2xl text-center mb-2">
       出了点错 - {{ props.error?.statusCode }}
     </h1>
-    <NEmpty description="你什么也找不到">
+    <div @click="retry">重试</div>
+    <div @click="handleError">回到首页</div>
+    <!-- <NEmpty description="你什么也找不到">
       <template #extra>
         <n-button @click="retry">
           重试
@@ -25,6 +27,6 @@ const handleError = () => clearError({ redirect: '/' })
           回到首页
         </n-button>
       </template>
-    </NEmpty>
+    </NEmpty> -->
   </div>
 </template>

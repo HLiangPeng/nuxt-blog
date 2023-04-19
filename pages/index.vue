@@ -17,7 +17,7 @@ const list: ListType[] = await $fetch('/api/post')
 
 definePageMeta({
   middleware(to, from) {
-    console.log('匿名中间件，具体页面执行', to, from)
+    // console.log('匿名中间件，具体页面执行', to, from)
   }
 })
 
@@ -29,11 +29,11 @@ function handleToDetail () {
 
 <template>
   <div>
-    <NuxtErrorBoundary>
+    <!-- <NuxtErrorBoundary>
       <template #error="{ error }">
         <p>An error occurred: {{ error }}</p>
       </template>
-    </NuxtErrorBoundary>
+    </NuxtErrorBoundary> -->
     <!-- <div
       v-for="(data, index) in list"
       :key="index"
