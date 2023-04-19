@@ -58,7 +58,9 @@ const img = '***'
 
 解决方案：发现在setup、onMounted都调用下接口，界面正常渲染
 
-## 如何使用element-plus icon
+## 使用element-plus的坑点
+
+### 1. icon的使用
 
 官方文档提供的写法：
 
@@ -78,3 +80,17 @@ const img = '***'
 ```
 
 方案二：unplugin-icons
+
+### 2. 在挂载时渲染的组件
+
+Teleport 被元素加元件中的多个组件内部使用 (例如) ElDialog, ElDrawer, ElTooltip, ElDropdown, ElSelect, ElDatePicker ...，所以在SSR期间需要特殊处理。
+
+在Nuxt中使用 `ClientOnly` 这个组件。
+
+```html
+<client-only>
+  <el-dialog v-model="dialogVisible">
+    内容
+  </el-dialog>
+</client-only>
+```
