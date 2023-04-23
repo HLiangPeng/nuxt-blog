@@ -1,12 +1,11 @@
 <script setup lang='ts'>
-definePageMeta({
-  middleware: ['mid']
-})
+
 </script>
 
 <template>
   <div>
-    这是详情页面
+    这是detail2
+    <img src="测试.jpg" alt="">
     <NuxtPage />
   </div>
 </template>

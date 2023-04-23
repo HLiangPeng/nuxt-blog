@@ -45,3 +45,29 @@ module.exports = {
 ```
 
 启动服务：`pm2 start ecosystem.config.js`
+
+## 服务器
+
+### node版本更新
+
+1. 清楚缓存
+
+`npm cache clean -f`
+
+2. 安装n包
+
+`npm install -g n`
+
+3. 升级node到稳定版本
+
+`n stable`
+
+最后查看版本，如果没变则重启服务器
+
+### 更新报错
+
+安装完发现报错: /usr/lib64/libm.so.6: version `GLIBC_2.27' not found (required by node)
+
+这是因为安装的node版本过高(centos 7 请选择  node版本 v16.1.0  进行安装)
+
+`n v16.1.0`
