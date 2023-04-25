@@ -19,9 +19,15 @@ title: nuxt3-部署
 
 #### 2. 启动服务
 
+1. 直接运行项目
+
 ```
 node .output/server/index.mjs
 ```
+
+2. 出现报错情况
+
+Cannot find module '../build/Release/sharp-linux-x64.node'等错误
 
 #### 3. 进程管理
 

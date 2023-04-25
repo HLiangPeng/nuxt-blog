@@ -1,7 +1,6 @@
 import path from 'path'
 import fs from 'fs'
 import matter from 'gray-matter'
-
 // 当前目录 + content，获取到文章目录
 const postsDir = path.join(process.cwd(), 'content')
 

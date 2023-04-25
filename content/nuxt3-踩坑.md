@@ -90,6 +90,14 @@ const img = '***'
 
 https://github.com/nuxt/nuxt/issues/19679
 
+### 出现`@popperjs/core`找不到的情况
+
+Cannot find package '@popperjs/core' imported from /home/wwwroot/nuxt3/.output/server/chunks/index-93b7c7d6.mjs
+
+Named export 'placements' not found. The requested module '@popperjs/core' is a CommonJS module, which may not support all module.exports as named exports.\nCommonJS modules can always be imported via the default export, for example using:\n\nimport pkg from '@popperjs/core';\nconst { placements, createPopper } = pkg;\n", "stack": "" } }
+
+这种情况是因为依赖的包是使用cjs模块 安装ems的包
+
 ## 使用element-plus的坑点
 
 ### 1. icon的使用
