@@ -134,3 +134,11 @@ Teleport 被元素加元件中的多个组件内部使用 (例如) ElDialog, ElD
   </el-dialog>
 </client-only>
 ```
+
+## pinia的数据没有响应式
+
+不能通过解构的方式获取数据
+
+```ts
+const { userInfo } = useUserStore()
+```
